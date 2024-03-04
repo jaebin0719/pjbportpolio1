@@ -4,17 +4,22 @@
   color: #ffefef;
   font-size: 25px;
   font-weight: 900;
-  padding: 20px 0;
+  padding: 25px 0;
   background-color: inherit;
+  transition: all 0.4s;
   position: fixed;
   z-index: 9999;
+  cursor: pointer;
 }
 .header:hover {
-  background-color: rgba(white, white white, 0.9);
+  background-color: rgba(111, 111, 111, 0.3);
 }
 .header .inner {
   display: flex;
   justify-content: space-between;
+}
+.header .inner:hover {
+  background-color: initial;
 }
 .header ul {
   display: flex;
@@ -27,5 +32,5 @@
   cursor: pointer;
 }
 .header .inner a:hover {
-  color: #88b2ff;
+  color: #c3d8ff;
 }

@@ -3,26 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PBJ's</title>
+    <title>PJB's</title>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="웹 퍼블리셔 박재빈의 포트폴리오 입니다."
+    />
+    <meta name="keywords" content="웹 퍼블리셔,이력서,포트폴리오" />
+    <meta name="robots" content="index, follow" />
+    <meta property="title" content="PBJ's" />
+    <meta property="keyword" content="웹 퍼블리셔,이력서,포트폴리오" />
+    <meta property="og:title" content="PBJ's" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="웹 퍼블리셔 박재빈의 포트폴리오 입니다."
+    />
+    <meta
+      property="og:description"
+      content="웹 퍼블리셔 박재빈의 포트폴리오 입니다."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <!-- SEO -->
+    <meta name="author" content="포트폴리오" />
+    <meta name="title" content="포트폴리오 :: 웹 퍼블리셔 박재빈 포트폴리오" />
+    <meta name="keywords" content="박재빈,웹 퍼블리셔,이력서,포트폴리오" />
+    <meta
+      name="description"
+      content="웹 퍼블리셔 박재빈의 포트폴리오 입니다."
+    />
+    <!-- 내 사이트에 로봇이 들어오는것을 허용(검색엔진최적화 seo 적용) -->
+    <meta name="robots" content="ALL" />
+    <!-- 네이버 모든문서 허용 -->
+    <meta name="Yeti" content="index, follow" />
+    <meta name="Yeti" content="ALL" />
+    <!-- 구글봇 모든문서 허용 -->
+    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="ALL" />
+    <!-- 다음봇 모든문서 허용 -->
+    <meta name="daumoa" content="index, follow" />
+    <meta name="daumoa" content="ALL" />
+    <!-- 아이폰에서 숫자누르면 자동으로 전화로 연결되는것을 방지 -->
+    <meta name="content-language" content="kr" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <!-- jqeury 적용 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
+    <script src="js/canvas.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <!-- swiper -->
     <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/6159533a91.js"
       crossorigin="anonymous"
     ></script>
+    <!-- aos -->
+    <script>
+      AOS.init();
+    </script>
   </head>
   <body>
-    <section class="sidebtn"></section>
+    <section class="side-buttons-container">
+      <a class="side-button active" href="#topSection" id="topButton"></a>
+      <a class="side-button" href="#hipsterSection" id="hipsterButton"></a>
+      <a class="side-button" href="#thirdSection" id="thirdButton"></a>
+      <a class="side-button" href="#fourthSection" id="fourthButton"></a>
+      <a class="side-button" href="#bottomSection" id="bottomButton"></a>
+    </section>
     <header class="header">
       <div class="inner">
         <div class="logo">
-          <a class="logo-text">PBJ's</a>
+          <a class="logo-text">PJB's</a>
         </div>
         <ul>
           <li>
@@ -38,9 +101,24 @@
       </div>
     </header>
     <section class="canvas">
-      <div class="stars"></div>
-      <div class="twinkling"></div>
-      <div class="clouds"></div>
+      <div class="canvas-back">
+        <div class="galaxy">
+          <div class="sky"></div>
+          <span class="moon"></span>
+        </div>
+      </div>
+      <div class="canvas-title">
+        <h1 data-shadow="PJB's">PJB's</h1>
+        <h2 data-shadow="portpolio">Web Publisher Portpolio</h2>
+      </div>
+      <div class="canvas-mouse">
+        <div class="box">
+          <div class="mouse">
+            <div class="mouse-wheel"></div>
+            <div class="arrows"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="aboutme">
       <div class="inner"></div>

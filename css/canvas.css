@@ -1,109 +1,218 @@
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
+.canvas {
+  height: 100vh;
+  /* background-color: #0c0c0c; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@-moz-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-@-ms-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-webkit-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-moz-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-ms-keyframes move-clouds-back {
-  from {
-    background-position: 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-.stars,
-.twinkling,
-.clouds {
+/* 마우스 스크롤 */
+.mouse {
+  opacity: 0.3;
+  width: 30px;
+  height: 50px;
+  /* border-radius: ; */
+  border: 2px solid white;
   position: absolute;
-  top: 0;
+  left: 50%;
+  bottom: 50px;
+  border-radius: 35px;
+  margin-left: -15px;
+}
+.mouse-wheel {
+  position: relative;
+  overflow: hidden;
+  width: 30px;
+  height: 15px;
+  border: 1px solid white;
+  width: 6px;
+  border-radius: 500px;
+  margin: 5px auto 0;
+  margin-top: 5px;
+}
+.mouse-wheel::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #fff;
+  height: 4px;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 15px;
+  animation: mouseScroll 1.5s 000ms infinite ease;
+}
+.arrows {
+  position: relative;
+  width: 26px;
+  height: 20px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.arrows-container {
+  overflow: hidden;
+  position: relative;
+}
+.arrows {
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  transform: rotate(45deg);
+  margin-left: -5px;
+  content: "";
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  animation: arrowScroll 1.5s 500ms ease-in-out infinite;
+}
+@keyframes mouseScroll {
+  0% {
+    margin-top: -10px;
+    opacity: 0;
+  }
+  50% {
+    height: 8px;
+  }
+  100% {
+    margin-top: 16px;
+  }
+}
+
+@keyframes arrowScroll {
+  from {
+    margin-top: -2px;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+  to {
+    margin-top: 10px;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+/* 배경 */
+.galaxy {
+  overflow: hidden;
+  position: absolute;
   left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.sky {
+  width: 100%w;
   height: 100%;
-  display: block;
+  background: rgb(16, 21, 29);
+  background: linear-gradient(180deg, rgb(8, 10, 26) 0%, rgb(0, 0, 0) 100%);
 }
 
-.stars {
-  background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
-  z-index: 0;
+.canvas i {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, transparent);
+  height: 300px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  animation: starDrop 5s infinite linear;
+  filter: blur(0.8px);
 }
 
-.twinkling {
-  background: transparent
-    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
-    top center;
+.canvas i:nth-child(4n + 1) {
+  background: linear-gradient(0deg, rgb(253, 242, 191) 0%, transparent);
+}
+
+.canvas i:nth-child(4n + 2) {
+  background: linear-gradient(0deg, rgb(210, 228, 255) 0%, transparent);
+}
+
+.canvas i:nth-child(4n + 3) {
+  background-color: rgb(250, 210, 191);
+  background: linear-gradient(0deg, rgba(2250, 210, 191, 1) 0%, transparent);
+}
+
+@keyframes starDrop {
+  0% {
+    transform: rotate(45deg) translate(0px, -2000px);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(0px, calc(100vh + 200px));
+  }
+}
+
+j {
+  display: inline-block;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: starMove 1s linear infinite;
+}
+
+j:nth-child(3n + 1) {
+  background-color: rgb(248, 193, 167);
+}
+
+j:nth-child(3n + 2) {
+  background-color: rgb(207, 199, 253);
+}
+
+@keyframes starMove {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.moon {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  content: "";
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
   z-index: 1;
-
-  -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite;
+  background: rgb(253, 248, 221);
+  filter: blur(1px);
+  box-shadow: 0px 0px 5px 5px rgba(253, 248, 221, 0.5);
+  transition: 250ms;
 }
-
-.clouds {
-  background: transparent url(https://i.imgur.com/mHbScrQ.png) repeat top center;
-  z-index: 3;
-
-  -moz-animation: move-clouds-back 200s linear infinite;
-  -ms-animation: move-clouds-back 200s linear infinite;
-  -o-animation: move-clouds-back 200s linear infinite;
-  -webkit-animation: move-clouds-back 200s linear infinite;
-  animation: move-clouds-back 200s linear infinite;
+/* 텍스트 효과 */
+.canvas-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+}
+.canvas-title h1 {
+  display: inline-block;
+  color: white;
+  font-family: "Righteous", serif;
+  font-size: 90px;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+}
+.canvas-title h2 {
+  display: inline-block;
+  color: #bebebe;
+  font-family: "Righteous", serif;
+  font-size: 40px;
+  text-shadow: 0.03em 0.03em 0 rgb(179, 179, 179);
+}
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
 }
