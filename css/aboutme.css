@@ -1,0 +1,32 @@
+.aboutme {
+  height: 100vh;
+  background-color: #070707;
+  display: flex;
+}
+.aboutme .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.about-left .mypic {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.about-right .about-text {
+  width: 90%;
+  height: auto;
+  /* background-color: #fff; */
+  line-height: 30px;
+  font-size: 18px;
+}
+.about-text .about-title {
+  font-family: "YEONGJUSeonbiTTF";
+  font-size: 25px;
+  color: #c3d8ff;
+}
+.about-text p {
+  padding-bottom: 15px;
+}

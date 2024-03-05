@@ -199,7 +199,7 @@ j:nth-child(3n + 2) {
   color: white;
   font-family: "Righteous", serif;
   font-size: 90px;
-  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  text-shadow: 0.03em 0.03em 0 rgb(117, 121, 139);
 }
 .canvas-title h2 {
   display: inline-block;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PJB's</title>
+    <title>PJB's | 웹 포트폴리오</title>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,8 +55,9 @@
     <!-- jqeury 적용 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- js -->
-    <script src="js/main.js"></script>
+    <script src="js/header.js "></script>
     <script src="js/canvas.js"></script>
+    <script src="js/sidebtn.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -87,15 +88,40 @@
         <div class="logo">
           <a class="logo-text">PJB's</a>
         </div>
-        <ul>
+        <ul class="header-icon">
           <li>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a
+              href="https://github.com/jaebin0719"
+              class="icon-link"
+              data-target="github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- <div class="submenu" id="github">
+              <a href="https://github.com/jaebin0719"
+                >https://github.com/jaebin0719</a
+              >
+            </div> -->
           </li>
           <li>
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" class="icon-link" data-target="email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <div class="submenu" id="email">
+              <span>Gmail</span>
+              <p>flxksldk@gmail.com</p>
+              <span>Naver</span>
+              <p>flxksldk0719@naver.com</p>
+            </div>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-mobile-screen-button"></i></a>
+            <a href="#" class="icon-link" data-target="mobile">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </a>
+            <div class="submenu" id="mobile">
+              <span>Phone</span>
+              <p>+82.10.9365.1083</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -121,7 +147,28 @@
       </div>
     </section>
     <section class="aboutme">
-      <div class="inner"></div>
+      <div class="inner">
+        <div class="about-left">
+          <div class="mypic"></div>
+        </div>
+        <div class="about-right">
+          <div class="about-text">
+            <span class="about-title">ABOUT ME</span>
+            <p>
+              안녕하세요! 웹 퍼블리셔 박재빈 입니다.
+              <br />좋아하는 것을 더 열심히 한다는 마음으로 하고 있습니다.
+            </p>
+            <p>
+              어릴때 부터 손으로 무엇인가를 만드는 것을 좋아하여 코드를
+              만지는것을 좋아합니다.
+            </p>
+            <p>
+              맡은 프로젝트의 목적과 사용자의 관점에서 생각하고 소통을 중요시
+              합니다.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="skill">
       <div class="inner"></div>

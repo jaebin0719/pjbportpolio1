@@ -13,6 +13,7 @@
 }
 .header:hover {
   background-color: rgba(111, 111, 111, 0.3);
+  box-shadow: 0px 0px 10px 0px #000;
 }
 .header .inner {
   display: flex;
@@ -33,4 +34,31 @@
 }
 .header .inner a:hover {
   color: #c3d8ff;
+}
+/* 서브 메뉴 */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(111, 111, 111, 0.6);
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #000;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 30px;
+  right: -4.3%;
+}
+.header .submenu span {
+  font-size: 20px;
+  color: #c3d8ff;
+}
+.header .submenu p {
+  font-size: 23px;
+  font-weight: 600;
+}
+.icon-link:hover + .submenu,
+.submenu:hover {
+  display: block;
+  transition: all 0.3s;
 }
