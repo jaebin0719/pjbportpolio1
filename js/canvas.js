@@ -9,45 +9,45 @@ $(document).ready(function () {
   let k = 0;
 
   function galaxy() {
-    while (i < amountMeteor) {
-      // meteor from top
-      let size = Math.random() * 2 + 0.5;
-      let posX = Math.floor(Math.random() * area.width());
-      let delay = Math.random() * -20;
-      let duration = Math.random() * 20 + 3;
+    // while (i < amountMeteor) {
+    //   // meteor from top
+    //   let size = Math.random() * 2 + 0.5;
+    //   let posX = Math.floor(Math.random() * area.width());
+    //   let delay = Math.random() * -20;
+    //   let duration = Math.random() * 20 + 3;
 
-      $("<i>")
-        .css({
-          width: size + "px",
-          left: posX + "px",
-          top: 0,
-          animationDelay: delay + "s",
-          animationDuration: duration + "s",
-        })
-        .appendTo(area);
+    //   $("<i>")
+    //     .css({
+    //       width: size + "px",
+    //       left: posX + "px",
+    //       top: 0,
+    //       animationDelay: delay + "s",
+    //       animationDuration: duration + "s",
+    //     })
+    //     .appendTo(area);
 
-      i++;
-    }
+    //   i++;
+    // }
 
-    while (k < amountMeteor * 2) {
-      // meteor from right
-      let size = Math.random() * 2 + 0.5;
-      let posY = Math.floor(Math.random() * area.height());
-      let delay = Math.random() * -20;
-      let duration = Math.random() * 30 + 3;
+    // while (k < amountMeteor * 2) {
+    //   // meteor from right
+    //   let size = Math.random() * 2 + 0.5;
+    //   let posY = Math.floor(Math.random() * area.height());
+    //   let delay = Math.random() * -20;
+    //   let duration = Math.random() * 30 + 3;
 
-      $("<i>")
-        .css({
-          width: size + "px",
-          right: 0,
-          top: posY + "px",
-          animationDelay: delay + "s",
-          animationDuration: duration + "s",
-        })
-        .appendTo(area);
+    //   $("<i>")
+    //     .css({
+    //       width: size + "px",
+    //       right: 0,
+    //       top: posY + "px",
+    //       animationDelay: delay + "s",
+    //       animationDuration: duration + "s",
+    //     })
+    //     .appendTo(area);
 
-      k++;
-    }
+    //   k++;
+    // }
 
     while (j < amountStar) {
       let size = Math.random() * 5;

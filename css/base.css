@@ -35,11 +35,11 @@ body {
   user-select: none;
   overflow-x: hidden;
 }
-/* body.menu-open {
-    overflow: hidden;
-  } */
 section {
   width: 100%;
   height: auto;
   margin-bottom: 200px;
+}
+::-webkit-scrollbar {
+  display: none;
 }

@@ -5,16 +5,17 @@
   font-size: 25px;
   font-weight: 900;
   padding: 25px 0;
-  background-color: inherit;
+  background-color: #070707;
   transition: all 0.4s;
   position: fixed;
   z-index: 9999;
   cursor: pointer;
+  box-shadow: 0 0 8px 0 #000;
 }
-.header:hover {
+/* .header:hover {
   background-color: rgba(111, 111, 111, 0.3);
   box-shadow: 0px 0px 10px 0px #000;
-}
+} */
 .header .inner {
   display: flex;
   justify-content: space-between;

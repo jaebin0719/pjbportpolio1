@@ -15,12 +15,13 @@
   background-color: #fff;
   border-radius: 30px;
 }
+.about-right {
+  width: 60%;
+}
 .about-right .about-text {
-  width: 90%;
-  height: auto;
-  /* background-color: #fff; */
   line-height: 30px;
   font-size: 18px;
+  font-weight: 500;
 }
 .about-text .about-title {
   font-family: "YEONGJUSeonbiTTF";
@@ -29,4 +30,27 @@
 }
 .about-text p {
   padding-bottom: 15px;
+}
+.about-more {
+  font-size: 16px;
+  font-weight: 900;
+  color: #ccc;
+  width: 10%;
+}
+.about-more a i {
+  padding-right: 10px;
+}
+.about-more a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.4s ease;
+}
+.about-more a:hover::after {
+  width: 100%;
+}
+.about-more a:hover::before {
+  width: 0;
 }
