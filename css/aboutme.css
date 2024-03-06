@@ -1,6 +1,6 @@
 .aboutme {
   height: 100vh;
-  background-color: #070707;
+  background-color: inherit;
   display: flex;
 }
 .aboutme .inner {
@@ -12,21 +12,26 @@
 .about-left .mypic {
   width: 300px;
   height: 400px;
-  background-color: #fff;
+  background-color: #4b4b4b;
   border-radius: 30px;
 }
 .about-right {
   width: 60%;
 }
 .about-right .about-text {
+  font-family: "Pretendard-Regular";
   line-height: 30px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
+  color: #818181;
+  letter-spacing: 1.5px;
 }
 .about-text .about-title {
   font-family: "YEONGJUSeonbiTTF";
   font-size: 25px;
-  color: #c3d8ff;
+  font-weight: 900;
+  color: #000;
+  text-shadow: 0.03em 0.03em 0 rgb(200, 255, 0);
 }
 .about-text p {
   padding-bottom: 15px;
@@ -34,8 +39,9 @@
 .about-more {
   font-size: 16px;
   font-weight: 900;
-  color: #ccc;
+  color: #696969;
   width: 10%;
+  letter-spacing: 0.8px;
 }
 .about-more a i {
   padding-right: 10px;
@@ -45,7 +51,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(102, 102, 102);
   transition: width 0.4s ease;
 }
 .about-more a:hover::after {

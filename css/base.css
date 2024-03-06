@@ -40,6 +40,6 @@ section {
   height: auto;
   margin-bottom: 200px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */

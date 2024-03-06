@@ -1,152 +1,32 @@
-$(document).ready(function () {
-  // 배경 js------------------------------------------------------
-  const area = $(".galaxy");
+// $(document).ready(function () {
+//   // 무한 루프로 스크롤할 텍스트 설정
+//   var text = "Welcome PJB's Portpolio";
 
-  let amountMeteor = 15;
-  let amountStar = 200;
-  let i = 0;
-  let j = 0;
-  let k = 0;
+//   // canvas-back 요소 선택
+//   var canvasBack = $(".canvas-back");
 
-  function galaxy() {
-    // while (i < amountMeteor) {
-    //   // meteor from top
-    //   let size = Math.random() * 2 + 0.5;
-    //   let posX = Math.floor(Math.random() * area.width());
-    //   let delay = Math.random() * -20;
-    //   let duration = Math.random() * 20 + 3;
+//   // canvas-back에 텍스트를 추가하고 무한 루프 애니메이션 실행
+//   canvasBack.text(text);
+//   animateText();
 
-    //   $("<i>")
-    //     .css({
-    //       width: size + "px",
-    //       left: posX + "px",
-    //       top: 0,
-    //       animationDelay: delay + "s",
-    //       animationDuration: duration + "s",
-    //     })
-    //     .appendTo(area);
+//   // 텍스트 무한 루프 애니메이션 함수
+//   function animateText() {
+//     // 텍스트를 오른쪽 끝으로 이동하여 보이지 않도록 설정
+//     canvasBack.css("marginLeft", "100%");
 
-    //   i++;
-    // }
-
-    // while (k < amountMeteor * 2) {
-    //   // meteor from right
-    //   let size = Math.random() * 2 + 0.5;
-    //   let posY = Math.floor(Math.random() * area.height());
-    //   let delay = Math.random() * -20;
-    //   let duration = Math.random() * 30 + 3;
-
-    //   $("<i>")
-    //     .css({
-    //       width: size + "px",
-    //       right: 0,
-    //       top: posY + "px",
-    //       animationDelay: delay + "s",
-    //       animationDuration: duration + "s",
-    //     })
-    //     .appendTo(area);
-
-    //   k++;
-    // }
-
-    while (j < amountStar) {
-      let size = Math.random() * 5;
-      let posX = Math.floor(Math.random() * area.width() * 2);
-      let posY = Math.floor(Math.random() * area.height());
-      let delay = Math.random() * 100 + 50;
-      let duration = Math.random() * 300 + 15;
-
-      $("<j>")
-        .css({
-          width: size + "px",
-          height: size + "px",
-          left: posX + "px",
-          top: posY + "px",
-          animationDuration: duration + "s",
-        })
-        .appendTo(area);
-
-      j++;
-    }
-  }
-
-  galaxy();
-  // -----------------------------------------------------------
-  //텍스트 효과
-  // ——————————————————————————————————————————————————
-  // // TextScramble
-  // // ——————————————————————————————————————————————————
-
-  // class TextScramble {
-  //   constructor(el) {
-  //     this.el = el;
-  //     this.chars = "!<>-_\\/[]{}—=+*^?#________";
-  //     this.update = this.update.bind(this);
-  //   }
-  //   setText(newText) {
-  //     const oldText = this.el.text();
-  //     const length = Math.max(oldText.length, newText.length);
-  //     const promise = new Promise((resolve) => (this.resolve = resolve));
-  //     this.queue = [];
-  //     for (let i = 0; i < length; i++) {
-  //       const from = oldText[i] || "";
-  //       const to = newText[i] || "";
-  //       const start = Math.floor(Math.random() * 40);
-  //       const end = start + Math.floor(Math.random() * 40);
-  //       this.queue.push({ from, to, start, end });
-  //     }
-  //     cancelAnimationFrame(this.frameRequest);
-  //     this.frame = 0;
-  //     this.update();
-  //     return promise;
-  //   }
-  //   update() {
-  //     let output = "";
-  //     let complete = 0;
-  //     for (let i = 0, n = this.queue.length; i < n; i++) {
-  //       let { from, to, start, end, char } = this.queue[i];
-  //       if (this.frame >= end) {
-  //         complete++;
-  //         output += to;
-  //       } else if (this.frame >= start) {
-  //         if (!char || Math.random() < 0.28) {
-  //           char = this.randomChar();
-  //           this.queue[i].char = char;
-  //         }
-  //         output += '<span class="dud">' + char + "</span>";
-  //       } else {
-  //         output += from;
-  //       }
-  //     }
-  //     this.el.html(output);
-  //     if (complete === this.queue.length) {
-  //       this.resolve();
-  //     } else {
-  //       this.frameRequest = requestAnimationFrame(this.update);
-  //       this.frame++;
-  //     }
-  //   }
-  //   randomChar() {
-  //     return this.chars[Math.floor(Math.random() * this.chars.length)];
-  //   }
-  // }
-
-  // // ——————————————————————————————————————————————————
-  // // Example
-  // // ——————————————————————————————————————————————————
-
-  // const phrases = ["PJB's <br><span>Web Publisher Portpolio</span>"];
-
-  // const el = $(".text");
-  // const fx = new TextScramble(el);
-
-  // let counter = 0;
-  // const next = () => {
-  //   fx.setText(phrases[counter]).then(() => {
-  //     setTimeout(next, 2000);
-  //   });
-  //   counter = (counter + 1) % phrases.length;
-  // };
-
-  // next();
-});
+//     // 텍스트가 오른쪽에서 왼쪽으로 이동하면서 나오는 애니메이션 실행
+//     canvasBack.animate(
+//       {
+//         marginLeft: "-" + canvasBack.width() + "px",
+//       },
+//       5000,
+//       "linear",
+//       function () {
+//         // 애니메이션이 완료되면 텍스트를 왼쪽 끝으로 이동하여 다시 시작
+//         canvasBack.css("marginLeft", "0");
+//         // 다시 애니메이션을 시작하여 무한 루프 생성
+//         animateText();
+//       }
+//     );
+//   }
+// });
