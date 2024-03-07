@@ -58,10 +58,17 @@
     <script src="js/header.js "></script>
     <script src="js/canvas.js"></script>
     <script src="js/sidebtn.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/work.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -71,9 +78,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- aos -->
-    <script>
-      AOS.init();
-    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <section class="side-buttons-container">
@@ -177,53 +183,96 @@
         <div class="info-banner">
           <h2>01 RESUME</h2>
         </div>
-        <div class="info-left">
-          <div class="info-edu">
-            <div class="info-title">
-              <h3>EDUCATION</h3>
+        <div class="info-inner">
+          <div class="info-left">
+            <div class="info-edu">
+              <div class="info-title">
+                <h3>EDUCATION</h3>
+              </div>
+              <div class="edu-info">
+                <ul>
+                  <li>
+                    <p>
+                      <strong>2023.05 - 2023.10</strong><br /><span
+                        >그린컴퓨터 웹 디자인&퍼블리셔 과정 수료</span
+                      >
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>2015.03 - 2018.02</strong><br /><span
+                        >대구농업마이스터고등학교 식품과 졸업</span
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="edu-info">
-              <ul>
-                <li>
-                  <p>
-                    <strong>2023.05 - 2023.10</strong><br /><span
-                      >그린컴퓨터 웹 디자인&퍼블리셔 과정 수료</span
-                    >
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>2015.03 - 2018.02</strong><br /><span
-                      >대구농업마이스터고등학교 식품과 졸업</span
-                    >
-                  </p>
-                </li>
-              </ul>
+            <div class="info-exp">
+              <div class="info-title">
+                <h3>EXPERIENCE</h3>
+              </div>
+              <div class="exp-info">
+                <ul>
+                  <li>
+                    <p>
+                      <strong>2018.07 - 2019.03 </strong><br /><span
+                        >호텔인터불고 대구 조리사 근무</span
+                      >
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="info-exp">
-            <div class="info-title">
-              <h3>EXPERIENCE</h3>
-            </div>
-            <div class="exp-info">
-              <ul>
-                <li>
-                  <p>
-                    <strong>2018.07 - 2019.03 </strong><br /><span
-                      >호텔인터불고 대구 조리사 근무</span
-                    >
-                  </p>
-                </li>
-              </ul>
+          <div class="info-right">
+            <div class="info-skill">
+              <div class="info-title">
+                <h3>SKILL</h3>
+              </div>
+              <div class="skillbar-wrapper">
+                <div class="skillbar clearfix html5" data-percent="93%">
+                  <h4 class="skillbar-title"><span>HTML5</span></h4>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">93%</div>
+                </div>
+                <div class="skillbar clearfix css" data-percent="88%">
+                  <h4 class="skillbar-title"><span>CSS</span></h4>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">88%</div>
+                </div>
+                <div class="skillbar clearfix javascript" data-percent="72%">
+                  <h4 class="skillbar-title"><span>JavaScript</span></h4>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">72%</div>
+                </div>
+                <div class="skillbar clearfix jquery" data-percent="72%">
+                  <h4 class="skillbar-title"><span>jQuery</span></h4>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">72%</div>
+                </div>
+                <div class="skillbar clearfix figma" data-percent="80%">
+                  <h4 class="skillbar-title"><span>Figma</span></h4>
+                  <div class="skillbar-bar"></div>
+                  <div class="skill-bar-percent">80%</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="info-right"></div>
       </div>
     </section>
-    <seciton class="project">
-      <div class="inner"></div>
-    </seciton>
+    <section class="work">
+      <div class="inner">
+        <div class="work-title">
+          <h2>02 WORK</h2>
+        </div>
+        <div class="work-info">
+          <div class="wi-left"></div>
+          <div class="wi-right"></div>
+        </div>
+      </div>
+    </section>
     <section class="call">
       <div class="inner"></div>
     </section>
