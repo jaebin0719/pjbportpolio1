@@ -57,7 +57,6 @@
     <!-- js -->
     <script src="js/header.js "></script>
     <script src="js/canvas.js"></script>
-    <script src="js/sidebtn.js"></script>
     <script src="js/info.js"></script>
     <script src="js/work.js"></script>
     <!-- css -->
@@ -82,13 +81,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <section class="side-buttons-container">
-      <a class="side-button active" href="#topSection" id="topButton"></a>
-      <a class="side-button" href="#hipsterSection" id="hipsterButton"></a>
-      <a class="side-button" href="#thirdSection" id="thirdButton"></a>
-      <a class="side-button" href="#fourthSection" id="fourthButton"></a>
-      <a class="side-button" href="#bottomSection" id="bottomButton"></a>
-    </section>
     <header class="header">
       <div class="inner">
         <div class="logo">
@@ -268,8 +260,41 @@
           <h2>02 WORK</h2>
         </div>
         <div class="work-info">
-          <div class="wi-left"></div>
-          <div class="wi-right"></div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/classlogo.png" alt="클래스엔로고" />
+                <div class="slide-text">
+                  <span>Class&</span>
+                  <br />
+                  <p>취미 생활 교육&비지니스 플랫폼</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/dullylogo.png" alt="둘리커피로고" />
+                <div class="slide-text">
+                  <span>Dully Coffee</span>
+                  <br />
+                  <p>둘리 커피 홍보 플랫폼</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/plogo.png" alt="포트폴리오로고" />
+                <div class="slide-text">
+                  <span>포트폴리오</span>
+                  <br />
+                  <p>개인 포트폴리오 웹 사이트</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right" style="color: #000000"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
