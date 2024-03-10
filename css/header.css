@@ -12,10 +12,6 @@
   cursor: pointer;
   box-shadow: 0 0 3px 0 #000;
 }
-/* .header:hover {
-  background-color: rgba(111, 111, 111, 0.3);
-  box-shadow: 0px 0px 10px 0px #000;
-} */
 .header .inner {
   display: flex;
   justify-content: space-between;
@@ -26,6 +22,9 @@
 .header ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
 }
 .header ul li {
   padding: 0 12px;

@@ -54,9 +54,3 @@
   background-color: rgb(102, 102, 102);
   transition: width 0.4s ease;
 }
-.about-more a:hover::after {
-  width: 100%;
-}
-.about-more a:hover::before {
-  width: 0;
-}
