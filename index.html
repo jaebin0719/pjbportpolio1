@@ -59,6 +59,7 @@
     <script src="js/canvas.js"></script>
     <script src="js/info.js"></script>
     <script src="js/work.js"></script>
+    <script src="js/call.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -83,15 +84,16 @@
   <body>
     <header class="header">
       <div class="inner">
-        <div class="logo">
-          <a href="#" class="logo-text">PJB's</a>
-        </div>
-        <ul class="header-icon">
-          <li><a href="#aboutme">ABOUT ME</a></li>
-          <li><a href="#info">INFO</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#call">CALL</a></li>
-        </ul>
+        <h1 class="brand">PJB<strong>'s</strong></h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="#canvas">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#call">Call</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="canvas" id="canvas">
@@ -143,7 +145,7 @@
     <section class="info" id="info">
       <div class="inner">
         <div class="info-banner">
-          <h2>01 RESUME</h2>
+          <h2>01 Resume</h2>
         </div>
         <div class="info-inner">
           <div class="info-left">
@@ -227,36 +229,36 @@
     <section class="work" id="work">
       <div class="inner">
         <div class="work-title">
-          <h2>02 WORK</h2>
+          <h2>02 Work</h2>
         </div>
         <div class="work-info">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/classlogo.png" alt="클래스엔로고" />
+                <img src="images/classlogo.png" alt="클래스엔로고" class="classlogo"/>
                 <div class="slide-text">
                   <span>Class&</span>
                   <br />
                   <p>취미 생활 교육&비지니스 플랫폼</p>
-                  <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>더보기</a>
+                  <a href="#"><button class="more-btn">자세히 보기</button></a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/dullylogo.png" alt="둘리커피로고" />
+                <img src="images/dullylogo.png" alt="둘리커피로고" class="dullylogo"/>
                 <div class="slide-text">
                   <span>Dully Coffee</span>
                   <br />
                   <p>둘리 커피 홍보 플랫폼</p>
-                  <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>더보기</a>
+                  <a href="#"><button class="more-btn">자세히 보기</button></a>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="images/plogo.png" alt="포트폴리오로고" />
+                <img src="images/plogo.png" alt="포트폴리오로고" class="pbjlogo"/>
                 <div class="slide-text">
                   <span>포트폴리오</span>
                   <br />
                   <p>개인 포트폴리오 웹 사이트</p>
-                  <a href="#"><i class="fa-solid fa-circle-arrow-right"></i>더보기</a>
+                  <a href="#"><button class="more-btn">자세히 보기</button></a>
                 </div>
               </div>
             </div>
@@ -272,7 +274,12 @@
       </div>
     </section>
     <section class="call" id="call">
-      <div class="inner"></div>
+      <div class="inner">
+        <div class="contact-title">
+          <h2>03 Contact</h2>
+        </div>
+        <div class="contact-menu"></div>
+      </div>
     </section>
     <footer class="footer">
       <div class="inner"></div>

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(240, 240, 234);
 }
 .work-title {
   margin-bottom: 50px;
@@ -25,6 +26,10 @@
 }
 .slide-text {
   padding: 18px 10px;
+  font-family: "Pretendard-Regular";
+}
+.swiper-slide {
+  position: relative;
 }
 .swiper-slide span {
   color: #000;
@@ -34,29 +39,28 @@
 }
 .swiper-slide p {
   margin: 10px 0;
-  color: #646464;
+  color: #3b82f6;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
 }
-.swiper-slide a{
+.swiper-slide a {
   color: #000000;
   font-weight: 800;
 }
-.swiper-slide a:hover{
+.swiper-slide a:hover {
   color: #646464;
-}
-.swiper-slide i{
-  padding-right: 5px;
 }
 .swiper-slide img {
   border-radius: 40px;
   border: 1px solid #ccc;
+  height: 266.25px;
 }
 .work-info .swiper-button-next,
-.work-info .swiper-button-prev{
+.work-info .swiper-button-prev {
   top: 50%;
   bottom: 0;
+  z-index: 1;
 }
 .swiper-button-prev i,
 .swiper-button-next i {
@@ -68,7 +72,6 @@
 .swiper-button-prev i:hover,
 .swiper-button-next i:hover {
   font-size: 48px;
-  /* border: 1px solid #646464; */
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -76,4 +79,39 @@
 }
 .swiper-pagination-bullet {
   background: rgb(255, 255, 255) !important;
+}
+/* 더보기 버튼 */
+:root {
+  --btn-bg: #c3d8ff;
+}
+.more-btn {
+  position: relative;
+  padding: 12px 25px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 1px 3px 0 0 #000;
+}
+.more-btn::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 120%;
+  height: 265%;
+  background: var(--btn-bg);
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(0);
+  transition: 0.6s;
+}
+.more-btn:hover {
+  background: transparent;
+}
+.more-btn:hover::before {
+  transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
 }

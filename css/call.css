@@ -1,0 +1,16 @@
+.call {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-title {
+  margin-bottom: 50px;
+  background: linear-gradient(to top, #ffe680 50%, transparent 20%);
+}
+.contact-title h2 {
+  font-size: 80px;
+  font-family: "YEONGJUSeonbiTTF";
+  color: #c3d8ff;
+  text-shadow: 0.03em 0.03em 0 rgb(0, 0, 0);
+}

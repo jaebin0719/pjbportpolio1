@@ -1,6 +1,6 @@
 .aboutme {
   height: 100vh;
-  background-color: inherit;
+  background-color: rgb(240, 240, 234);
   display: flex;
 }
 .aboutme .inner {
@@ -53,4 +53,7 @@
   height: 2px;
   background-color: rgb(102, 102, 102);
   transition: width 0.4s ease;
+}
+.about-more a:hover::after {
+  width: 100%;
 }
