@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // 스와이퍼
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 50,
@@ -12,4 +13,5 @@ $(document).ready(function () {
     },
     loop: true,
   });
+  //
 });

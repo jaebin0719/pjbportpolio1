@@ -1,0 +1,24 @@
+.footer {
+  height: 10vh;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 5px #ccc;
+  color: #616161;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+.footer .inner {
+  width: 18%;
+}
+.footer-text {
+  height: 100%;
+  line-height: 15px;
+}
+.footer span:nth-child(1) {
+  color: #000;
+  font-weight: 800;
+  display: block;
+}

@@ -55,6 +55,14 @@
   border-radius: 40px;
   border: 1px solid #ccc;
   height: 266.25px;
+  cursor: pointer;
+}
+.swiper-slide .work-logo {
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+.swiper-slide .work-logo:hover {
+  opacity: 0;
 }
 .work-info .swiper-button-next,
 .work-info .swiper-button-prev {

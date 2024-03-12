@@ -1,11 +1,11 @@
 .call {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .contact-title {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   background: linear-gradient(to top, #ffe680 50%, transparent 20%);
 }
 .contact-title h2 {
@@ -13,4 +13,33 @@
   font-family: "YEONGJUSeonbiTTF";
   color: #c3d8ff;
   text-shadow: 0.03em 0.03em 0 rgb(0, 0, 0);
+}
+.contact-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-menu span {
+  line-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-menu span:nth-child(1) {
+  color: #3b82f6;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 25px;
+  font-weight: bold;
+}
+.contact-menu i {
+  color: #000;
+  font-size: 30px;
+}
+.contact-menu span:nth-child(3) {
+  color: #000;
+  font-size: 20px;
+}
+.contact-menu span > i {
+  padding-right: 10px;
 }
