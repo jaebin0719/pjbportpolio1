@@ -1,12 +1,13 @@
 .sub-info {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 }
 .sub-img {
   margin-bottom: 50px;
 }
 .sub-img img {
   border-radius: 30px;
+  border: 1px solid #000;
 }
 .sub-img .sub-gif {
   margin-bottom: 50px;
@@ -28,22 +29,24 @@
   max-height: 380px;
   width: auto;
   max-width: 580px;
+  border: 1px solid #000;
 }
-.sub-text-title{
+.sub-text-toggle {
+  margin-top: 20px;
+  position: relative;
+}
+.sub-text-toggle h2 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
+  cursor: pointer;
 }
-.sub-text-detail{
-  line-height: 23px;
+.sub-text-toggle h2 i {
+  margin-left: 10px;
+}
+.sub-text-toggle li {
   color: #535353;
-}
-.sub-text .sub-text-detail::before{
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #000;
-  border-radius: 50%;
-  margin-right: 5px;
+  line-height: 23px;
+  list-style-type: disc;
+  list-style-position: inside;
 }

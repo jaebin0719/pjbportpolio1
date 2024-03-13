@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PJB's | 작업</title>
+    <title>PJB's | Class&</title>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -60,6 +60,7 @@
     <script src="js/info.js"></script>
     <script src="js/work.js"></script>
     <script src="js/call.js"></script>
+    <script src="js/subinfo.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -88,11 +89,11 @@
           <h1 class="brand">PJB<strong>'s</strong></h1>
           <nav>
             <ul class="menu">
-              <li><a href="#canvas">Home</a></li>
+              <!-- <li><a href="#canvas">Home</a></li>
               <li><a href="#aboutme">About Me</a></li>
               <li><a href="#info">Info</a></li>
               <li><a href="#work">Work</a></li>
-              <li><a href="#call">Call</a></li>
+              <li><a href="#call">Call</a></li> -->
             </ul>
           </nav>
         </div>
@@ -114,35 +115,82 @@
           <p class="sub-port-text">
             <span>사이트의 퍼블리싱과 디자인을 담당 하였습니다.</span>
             <span>팀원들 과의 협업을 통하여 역할을 분담하였습니다.</span>
+            <span>사용자가 편하도록 반응형으로 작업하였습니다.</span>
+            <span>A안의 불편했던점을 수정하기 위해 B안을 만들었습니다.</span>
           </p>
-          <a href="#"><button class="work-go-btn">자세히 보기</button></a>
+          <div class="site-btn">
+            <a href="https://3team-finalproject.vercel.app/"
+              ><button class="work-go-btn">A 홈페이지</button></a
+            >
+            <a href="https://3team-project-b.vercel.app/"
+              ><button class="work-go-btn">B 홈페이지</button></a
+            >
+          </div>
         </div>
       </section>
       <section class="sub-info">
         <div class="inner">
-        <div class="sub-img">
-          <div class="sub-gif">
-            <img src="images/class&.gif" alt="클래스영상" />
+          <div class="sub-img">
+            <div class="sub-gif">
+              <img src="images/class&.gif" alt="클래스영상" />
+            </div>
+            <div class="sub-detail">
+              <div class="sub-detail-info">
+                <h5>[Class& 수강신청 페이지]</h5>
+                <img src="images/class-sub.PNG" alt="클래스상세페이지" />
+              </div>
+              <div class="sub-detail-info">
+                <h5>[Class& 게시판페이지]</h5>
+                <img src="images/class-group.PNG" alt="클래스게시판" />
+              </div>
+            </div>
           </div>
-          <div class="sub-detail">
-            <div class="sub-detail-info">
-              <h5>[Class& 수강신청 페이지]</h5>
-              <img src="images/class-sub.PNG" alt="클래스상세페이지" />
-            </div>
-            <div class="sub-detail-info">
-              <h5>[Class& 게시판페이지]</h5>
-              <img src="images/class-group.PNG" alt="클래스게시판" />
-            </div>
+          <div class="sub-text">
+            <ul class="sub-text-toggle">
+              <h2>1.기획 의도</h2>
+              <li>
+                취미 생활의 인구가 늘어남에 따라 취미생활을 더욱 쉽고 싸게
+                즐기게 하기위해 사이트를 제작하였습니다.
+              </li>
+              <li>
+                공동구매를 통해 취미클래스를 싸게 등록하고,같은 취미를 즐기는
+                사람들과의 교류와 소통이 가능하게 하기위해 공동구매를
+                기획하였습니다.
+              </li>
+              <li>
+                취미 생활 중 필요한 용품들을 중고로 구매해 싸게
+                즐길수있게하고,남은 용품을 버리지않고 판매 할수 있도록 하기위해
+                중고거래를 기획하였습니다.
+              </li>
+            </ul>
+            <ul class="sub-text-toggle">
+              <h2>2.공동 구매</h2>
+              <li>수강생이 많이 모일 수록 저렴하게 수강 가능.</li>
+              <li>한 명이 모집글을 올리면 다른 사람들이 참여하는 방식.</li>
+              <li>
+                최소 정원이 달성되면 수강을 시작 할 수 있음.(클래스 인기 별로
+                최소 정원은 5~10명 사이)
+              </li>
+              <li>최소 정원부터 한 명씩 늘어갈 수록 할인율↑ (최대 40%)</li>
+              <li>
+                최소 인원이 덜 채워지면 서로 채팅을 통해 의논 후 수강 시작
+              </li>
+              <li>공동구매 참여 후 미결제시 패널티 부여.</li>
+            </ul>
+            <ul class="sub-text-toggle">
+              <h2>3.중고 거래</h2>
+              <li>
+                다른 중고거래 사이트와 다르게 취미용품 세분화와 주 사용자가
+                취미를 가진 사람들이므로 원하는 취미용품을 쉽게 찾고 판매할 수
+                있다.
+              </li>
+              <li>
+                중고거래 활성화 → 중고거래를 할 수록 포인트가 적립 되어 클래스
+                수강 시 사용 가능.
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="sub-text">
-          <h2 class="sub-text-title">기획 의도</h2>
-          <p class="sub-text-detail">취미 생활의 인구가 늘어남에 따라 취미생활을 더욱 쉽고 싸게 즐기게 하기위해 사이트를 제작하였습니다.</p>
-          <p class="sub-text-detail">공동구매를 통해 취미클래스를 싸게 등록하고,같은 취미를 즐기는 사람들과의 교류와 소통이 가능하게 하기위해 공동구매를 기획하였습니다.</p>
-          <p class="sub-text-detail">취미 생활 중 필요한 용품들을 중고로 구매해 싸게 즐길수있게하고,남은 용품을 버리지않고 판매 할수 있도록 하기위해 중고거래를 기획하였습니다.</p>
-        </div>
-      </div>
       </section>
       <footer class="footer">
         <div class="inner">
