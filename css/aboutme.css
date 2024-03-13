@@ -12,7 +12,9 @@
 .about-left .mypic {
   width: 300px;
   height: 400px;
-  background-color: #4b4b4b;
+  border-radius: 30px;
+}
+.mypic img {
   border-radius: 30px;
 }
 .about-right {
@@ -40,11 +42,15 @@
   font-size: 16px;
   font-weight: 900;
   color: #696969;
-  width: 10%;
+  width: 40%;
   letter-spacing: 0.8px;
+  display: flex;
+}
+.about-more a:nth-child(1) {
+  margin-right: 30px;
 }
 .about-more a i {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .about-more a::after {
   content: "";
