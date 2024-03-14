@@ -1,6 +1,5 @@
 .aboutme {
   height: 100vh;
-  background-color: rgb(240, 240, 234);
   display: flex;
 }
 .aboutme .inner {
@@ -23,7 +22,7 @@
 .about-right .about-text {
   font-family: "Pretendard-Regular";
   line-height: 30px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #818181;
   letter-spacing: 1.5px;

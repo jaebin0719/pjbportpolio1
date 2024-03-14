@@ -7,7 +7,6 @@
   align-items: center;
   transition: all 0.25s cubic-bezier(042, 0, 0, 1);
   box-shadow: 0 2px 4px -1px #0000000f;
-  box-shadow: 0 4px 6px -1px #0000000f;
   font-family: "Pretendard-Regular";
   position: fixed;
   z-index: 10;
@@ -23,6 +22,9 @@
   font-weight: 900;
   color: #000;
   cursor: pointer;
+}
+.brand:hover {
+  color: #3b82f6;
 }
 .brand strong {
   color: #3b82f6;

@@ -101,7 +101,7 @@
         <div class="canvas-back"></div>
         <div class="canvas-title">
           <h1 data-shadow="PJB's">PJB's</h1>
-          <h2 data-shadow="portpolio">Web Publisher Portpolio</h2>
+          <h2 data-shadow="portpolio">Web Publisher Portfolio</h2>
         </div>
         <div class="canvas-mouse">
           <div class="box">
@@ -119,7 +119,7 @@
               <img src="images/mypic.jpg" alt="증명사진" />
             </div>
           </div>
-          <div class="about-right">
+          <div class="about-right" data-aos="fade-up" data-aos-duration="3000">
             <div class="about-text">
               <span class="about-title">ABOUT ME</span>
               <p>
@@ -140,8 +140,7 @@
                   href="https://noble-ozraraptor-4da.notion.site/PJB-s-806271fb85e04ee2a5940539988e00bd?pvs=4"
                   ><i class="fa-solid fa-circle-arrow-right"></i>Notion</a
                 >
-                <a
-                  href="https://github.com/jaebin0719"
+                <a href="https://github.com/jaebin0719"
                   ><i class="fa-solid fa-circle-arrow-right"></i>Github</a
                 >
               </div>
@@ -149,7 +148,12 @@
           </div>
         </div>
       </section>
-      <section class="info" id="info">
+      <section
+        class="info"
+        id="info"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="inner">
           <div class="info-banner">
             <h2>01 Resume</h2>
@@ -233,45 +237,59 @@
           </div>
         </div>
       </section>
-      <section class="work" id="work">
+      <section
+        class="work"
+        id="work"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="inner">
           <div class="work-title">
             <h2>02 Work</h2>
           </div>
           <div class="work-info">
-            <div class="swiper mySwiper">
+            <div class="swiper workSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-text">
-                    <img src="images/classicon.png" alt="클래스이미지" />
-                    <span>Class&</span>
-                    <br />
-                    <p>취미 생활 교육&비지니스 플랫폼</p>
-                    <a href="sub-class.html"
-                      ><button class="more-btn">자세히 보기</button></a
-                    >
+                    <div class="slide-img">
+                      <img src="images/classicon.png" alt="클래스이미지" />
+                    </div>
+                    <div class="work-img-info">
+                      <span>Class&</span>
+                      <p>취미 생활 교육&비지니스 플랫폼</p>
+                      <a href="sub-class.html"
+                        ><button class="more-btn">자세히 보기</button></a
+                      >
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-text">
-                    <img src="images/dullyicon.png" alt="둘리커피이미지" />
-                    <span>Dully Coffee</span>
-                    <br />
-                    <p>둘리 커피 홍보 플랫폼</p>
-                    <a href="sub-dully.html"
-                      ><button class="more-btn">자세히 보기</button></a
-                    >
+                    <div class="slide-img">
+                      <img src="images/dullyicon.png" alt="둘리커피이미지" />
+                    </div>
+                    <div class="work-img-info">
+                      <span>Dully Coffee</span>
+                      <p>둘리 커피 홍보 플랫폼</p>
+                      <a href="sub-dully.html"
+                        ><button class="more-btn">자세히 보기</button></a
+                      >
+                    </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-text">
-                    <img src="images/porticon.png" alt="" />
-                    <span>포트폴리오</span>
-                    <br />
-                    <p>개인 포트폴리오 웹 사이트</p>
-                    <a href="sub-port.html"
-                      ><button class="more-btn">자세히 보기</button></a
-                    >
+                    <div class="slide-img">
+                      <img src="images/porticon.png" alt="포트폴리오이미지" />
+                    </div>
+                    <div class="work-img-info">
+                      <span>포트폴리오</span>
+                      <p>개인 포트폴리오 웹 사이트</p>
+                      <a href="sub-port.html"
+                        ><button class="more-btn">자세히 보기</button></a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -282,11 +300,15 @@
             <div class="swiper-button-prev">
               <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
-      <section class="call" id="call">
+      <section
+        class="call"
+        id="call"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="inner">
           <div class="contact-title">
             <h2>03 Contact</h2>
@@ -314,4 +336,7 @@
       </footer>
     </div>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>

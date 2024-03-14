@@ -1,7 +1,8 @@
 .footer {
+  position: absolute;
   height: 10vh;
   background-color: #fff;
-  box-shadow: 5px 5px 5px 5px #ccc;
+  box-shadow: 5px 2px 4px 1px #ccc;
   color: #616161;
   font-weight: bold;
   text-align: center;

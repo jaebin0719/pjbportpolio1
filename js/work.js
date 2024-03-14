@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // 스와이퍼
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".workSwiper", {
     slidesPerView: 2,
     spaceBetween: 50,
     cssMode: true,
