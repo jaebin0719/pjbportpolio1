@@ -44,7 +44,7 @@
   font-weight: bold;
   margin-bottom: 30px;
 }
-.sub-item .part:after {
+.sub-item span:after {
   display: inline-block;
   margin: 0 10px;
   content: "";
