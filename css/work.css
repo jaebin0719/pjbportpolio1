@@ -36,13 +36,17 @@
 }
 .work-img-info {
   position: relative;
-  left: -15%;
+  left: -10%;
 }
 .swiper-slide span {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
+}
+.swiper-slide span strong {
+  font-size: 1.2rem;
+  color: #646464;
 }
 .swiper-slide p {
   margin: 10px 0;

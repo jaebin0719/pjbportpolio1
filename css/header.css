@@ -34,6 +34,10 @@
   align-items: center;
   height: 64px;
 }
+.header-menu {
+  display: flex;
+  align-items: center;
+}
 .menu li {
   height: 100%;
   display: flex;
