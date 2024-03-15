@@ -60,6 +60,34 @@
 .menu li a.active {
   color: #fff;
 }
+.menu-bar {
+  display: inline-block;
+  transform: rotate(180deg);
+  cursor: pointer;
+  margin-left: 20px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: #000;
+  margin: 3px 0;
+  border-radius: 30px;
+  transition: all 0.8s ease;
+}
+.bar2 {
+  width: 17px;
+}
+.menu-bar.open .bar1 {
+  transform: rotate(45deg) translateX(10px);
+}
+.menu-bar.open .bar2 {
+  opacity: 0;
+}
+.menu-bar.open .bar3 {
+  transform: rotate(-45deg) translateX(10px);
+}
 .menu li a.active::before {
   background-color: #3b82f6;
   z-index: -1;
@@ -90,4 +118,20 @@
   background-color: #3b82f6;
   width: 100%;
   height: 4px;
+}
+@media screen and (max-width: 700px) {
+  .header-menu .menu li a {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .inner {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  .header-menu {
+    display: none;
+  }
 }
