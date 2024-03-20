@@ -142,6 +142,10 @@
   .swiper-button-next i {
     font-size: 24px;
   }
+  .swiper-button-prev i:hover,
+  .swiper-button-next i:hover {
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 480px) {
   .work-title h2 {
@@ -150,5 +154,9 @@
   .more-btn {
     font-size: 14px;
     padding: 8px 14.5px;
+  }
+  .swiper-button-prev i:hover,
+  .swiper-button-next i:hover {
+    font-size: 24px;
   }
 }
