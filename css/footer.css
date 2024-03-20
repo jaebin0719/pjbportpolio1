@@ -1,8 +1,6 @@
 .footer {
   position: absolute;
   height: 10vh;
-  background-color: #fff;
-  box-shadow: 5px 2px 4px 1px #ccc;
   color: #616161;
   font-weight: bold;
   text-align: center;
@@ -10,9 +8,6 @@
   align-items: center;
   width: 100%;
   font-size: 14px;
-}
-.footer .inner {
-  width: 18%;
 }
 .footer-text {
   height: 100%;
