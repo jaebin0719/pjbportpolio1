@@ -1,6 +1,6 @@
 .aboutme {
-  height: 100vh;
   display: flex;
+  margin-bottom: 200px;
 }
 .aboutme .inner {
   display: flex;

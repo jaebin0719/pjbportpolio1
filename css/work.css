@@ -1,8 +1,8 @@
 .work {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 200px;
 }
 .work-title {
   margin-bottom: 50px;

@@ -1,8 +1,8 @@
 .call {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 200px;
 }
 .contact-title {
   margin-bottom: 150px;

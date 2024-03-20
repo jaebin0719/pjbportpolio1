@@ -1,10 +1,10 @@
 .info {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #696969;
   font-family: "Pretendard-Regular";
+  margin-bottom: 200px;
 }
 .info-banner {
   margin-bottom: 50px;
@@ -188,6 +188,10 @@
   }
 }
 @media screen and (max-width: 480px) {
+  section {
+    height: 100%;
+    margin-bottom: 100px;
+  }
   .skill-icon ul li {
     width: 50px;
     margin: 0 5px;
