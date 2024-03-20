@@ -34,10 +34,6 @@
 .swiper-slide {
   position: relative;
 }
-.work-img-info {
-  position: relative;
-  left: -10%;
-}
 .swiper-slide span {
   color: #000;
   font-size: 1.6rem;
@@ -70,18 +66,6 @@
 }
 .slide-img {
   position: relative;
-}
-.slide-img:after {
-  position: absolute;
-  top: 15%;
-  left: 8%;
-  border-radius: 30px;
-  display: block;
-  content: "";
-  width: 435px;
-  height: 400px;
-  z-index: -1;
-  background-color: rgba(240, 240, 240, 0.6);
 }
 .work-info .swiper-button-next,
 .work-info .swiper-button-prev {
@@ -141,4 +125,30 @@
 }
 .more-btn:hover::before {
   transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
+}
+@media screen and (max-width: 1024px) {
+  .swiper-slide span {
+    font-size: 1.3rem;
+  }
+  .swiper-slide span strong {
+    font-size: 1rem;
+  }
+  .swiper-slide p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-button-prev i,
+  .swiper-button-next i {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work-title h2 {
+    font-size: 55px;
+  }
+  .more-btn {
+    font-size: 14px;
+    padding: 8px 14.5px;
+  }
 }
