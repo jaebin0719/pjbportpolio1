@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .work-info .swiper {
   width: 90%;
@@ -135,6 +136,9 @@
   }
   .swiper-slide p {
     font-size: 1rem;
+  }
+  .work-info {
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
