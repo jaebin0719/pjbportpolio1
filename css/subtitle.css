@@ -1,9 +1,10 @@
 .sub-work-title {
-  height: 65vh;
   color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
+  margin-bottom: 100px;
 }
 .sub-work-title .inner {
   display: flex;
@@ -56,14 +57,18 @@
   color: #3b82f6;
   margin-right: 10px;
 }
-.sub-port-text {
+.sub-port-text ul {
   font-size: 20px;
   color: #535353;
-  width: 50%;
+  width: 100%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  line-height: 30px;
+  line-height: 26px;
+}
+.sub-port-text ul li {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 :root {
   --btn-bg: #c3d8ff;
@@ -102,4 +107,28 @@
 }
 .work-go-btn:hover::before {
   transform: translate(-50%, -50%) rotate(-45deg) scaleX(1);
+}
+@media screen and (max-width: 768px) {
+  .work-name {
+    font-size: 30px;
+  }
+  .sub-item {
+    font-size: 16px;
+    flex-direction: column;
+    line-height: 25px;
+  }
+  .sub-item span::after {
+    display: none;
+  }
+  .sub-port-text ul {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sub-work-title {
+    margin-bottom: 0;
+  }
+  .work-name {
+    font-size: 22px;
+  }
 }
