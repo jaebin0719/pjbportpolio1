@@ -5,7 +5,7 @@ $(document).ready(function () {
     spaceBetween: 50,
     cssMode: true,
     loop: true,
-    loopAdditionalSlides : 1,
+    resistance: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
